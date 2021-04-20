@@ -15,7 +15,7 @@ contract WETHGateway is IWETHGateway, Ownable {
   address internal jAaveAddress;
 
   /**
-   * @dev Sets the WETH address and the jAave contract address. Infinite approves lending pool.
+   * @dev Sets the WETH address and the jAave contract address. Infinite approves jAave contract.
    * @param _weth Address of the Wrapped Ether contract
    * @param _jAaveAddress Address of the JAvve contract
    **/

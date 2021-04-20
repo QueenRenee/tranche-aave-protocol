@@ -70,7 +70,7 @@ contract JAave is OwnableUpgradeable, JAaveStorage, IJAave {
      */
     function setNewEnvironment(address _priceOracle, 
             address _feesCollector, 
-            address _tranchesDepl) external onlyOwner{
+            address _tranchesDepl) external onlyOwner {
         require((_priceOracle != address(0)) && (_feesCollector != address(0)) && (_tranchesDepl != address(0)), "JAave: check addresses");
         priceOracleAddress = _priceOracle;
         feesCollectorAddress = _feesCollector;
